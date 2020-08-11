@@ -19,19 +19,13 @@ class Movie
     end
   end
 
-
-
-
-
-
-
-
-  # def reviewed_movies
-  #   self.reviews.map do |view|
-  #     view.movie
-  #   end
-  # end
+  def reviewers
+    self.reviews.map do |view|
+      view.viewer
+    end
+  end
 
   
+
 
 end
