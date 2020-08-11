@@ -55,9 +55,5 @@ class Viewer
       end       
     end
   end
-
-  def test(movie, rating)
-
-  end
   
 end
