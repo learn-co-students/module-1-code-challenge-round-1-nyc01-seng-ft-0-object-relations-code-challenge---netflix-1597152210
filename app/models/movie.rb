@@ -21,12 +21,8 @@ class Movie
   end 
 
   def average_rating
-   
     reviews.reduce(0){|sum, review| sum + review.rating } / reviews.count 
   end
 
-  def self.highest_rated
-    all.max {|movie_a, movie_b| movie_a.average_rating <=> movie_b.average_rating }
-  end 
 
 end
