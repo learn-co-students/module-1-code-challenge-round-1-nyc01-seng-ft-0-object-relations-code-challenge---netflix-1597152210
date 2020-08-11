@@ -48,55 +48,55 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Movie
 
-- `Movie#initialize(title)`
+<!-- - `Movie#initialize(title)`
   - `Movie` is initialized with a title (string)
-  - title **can be** changed after the `Movie` is initialized
-- `Movie#title`
-  - returns the `Movie`'s title
-- `Movie.all`
-  - returns an array of all the `Movie` instances that have been initialized
+  - title **can be** changed after the `Movie` is initialized -->
+<!-- - `Movie#title`
+  - returns the `Movie`'s title -->
+<!-- - `Movie.all`
+  - returns an array of all the `Movie` instances that have been initialized -->
 
 #### Viewer
 
-- `Viewer#initialize(username)`
+<!-- - `Viewer#initialize(username)`
   - `Viewer` is initialized with a username (string)
-  - username **can be** changed after the Viewer is initialized
-- `Viewer#username`
-  - returns the Viewer's username
-- `Viewer.all`
-  - returns an array of all the Viewer instances that have been initialized
+  - username **can be** changed after the Viewer is initialized -->
+<!-- - `Viewer#username`
+  - returns the Viewer's username -->
+<!-- - `Viewer.all` -->
+  <!-- - returns an array of all the Viewer instances that have been initialized -->
 
 #### Review
 
-- `Review#initialize(viewer, movie, rating)`
-  - `Review` is initialized with a `Viewer` instance, a `Movie` instance, and a rating (number)
-- `Review#rating`
-  - returns the rating for the `Review` instance
-- `Review.all`
-  - returns an array of all initialized `Review` instances
+<!-- - `Review#initialize(viewer, movie, rating)`
+  - `Review` is initialized with a `Viewer` instance, a `Movie` instance, and a rating (number) -->
+<!-- - `Review#rating`
+  - returns the rating for the `Review` instance -->
+<!-- - `Review.all`
+  - returns an array of all initialized `Review` instances -->
 
 ### Object Relationship Methods
 
 #### Review
 
-- `Review#viewer`
+<!-- - `Review#viewer`
   - returns the `Viewer` instance associated with the `Review` instance
 - `Review#movie`
-  - returns the `Movie` instance associated with the `Review` instance
+  - returns the `Movie` instance associated with the `Review` instance -->
 
 #### Viewer
 
-- `Viewer#reviews`
+<!-- - `Viewer#reviews`
   - returns an array of `Review` instances associated with the `Viewer` instance.
 - `Viewer#reviewed_movies`
-  - returns an array of `Movie` instances reviewed by the `Viewer` instance.
+  - returns an array of `Movie` instances reviewed by the `Viewer` instance. -->
 
 #### Movie
 
-- `Movie#reviews`
+<!-- - `Movie#reviews`
   - returns an array of all the `Review` instances for the `Movie`.
 - `Movie#reviewers`
-  - returns an array of all of the `Viewer` instances that reviewed the `Movie`.
+  - returns an array of all of the `Viewer` instances that reviewed the `Movie`. -->
 
 ### Aggregate and Association Methods
 
