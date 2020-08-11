@@ -49,54 +49,54 @@ Some of the methods listed are provided to you in the starter code. You should c
 #### Movie
 
 - `Movie#initialize(title)`
-  - `Movie` is initialized with a title (string)
-  - title **can be** changed after the `Movie` is initialized
+  - `Movie` is initialized with a title (string) # done, works
+  - title **can be** changed after the `Movie` is initialized # done, works
 - `Movie#title`
-  - returns the `Movie`'s title
+  - returns the `Movie`'s title # done, works
 - `Movie.all`
-  - returns an array of all the `Movie` instances that have been initialized
+  - returns an array of all the `Movie` instances that have been initialized # done, works
 
 #### Viewer
 
 - `Viewer#initialize(username)`
-  - `Viewer` is initialized with a username (string)
-  - username **can be** changed after the Viewer is initialized
+  - `Viewer` is initialized with a username (string) # done, works
+  - username **can be** changed after the Viewer is initialized # done, works
 - `Viewer#username`
-  - returns the Viewer's username
+  - returns the Viewer's username # done, works
 - `Viewer.all`
-  - returns an array of all the Viewer instances that have been initialized
+  - returns an array of all the Viewer instances that have been initialized # done, works
 
 #### Review
 
 - `Review#initialize(viewer, movie, rating)`
-  - `Review` is initialized with a `Viewer` instance, a `Movie` instance, and a rating (number)
+  - `Review` is initialized with a `Viewer` instance, a `Movie` instance, and a rating (number) # done, works
 - `Review#rating`
-  - returns the rating for the `Review` instance
+  - returns the rating for the `Review` instance # done, works
 - `Review.all`
-  - returns an array of all initialized `Review` instances
+  - returns an array of all initialized `Review` instances # done, works
 
 ### Object Relationship Methods
 
 #### Review
 
 - `Review#viewer`
-  - returns the `Viewer` instance associated with the `Review` instance
+  - returns the `Viewer` instance associated with the `Review` instance # done, works
 - `Review#movie`
-  - returns the `Movie` instance associated with the `Review` instance
+  - returns the `Movie` instance associated with the `Review` instance # done, works
 
 #### Viewer
 
 - `Viewer#reviews`
-  - returns an array of `Review` instances associated with the `Viewer` instance.
+  - returns an array of `Review` instances associated with the `Viewer` instance. # done, works
 - `Viewer#reviewed_movies`
-  - returns an array of `Movie` instances reviewed by the `Viewer` instance.
+  - returns an array of `Movie` instances reviewed by the `Viewer` instance. # done, works
 
 #### Movie
 
 - `Movie#reviews`
-  - returns an array of all the `Review` instances for the `Movie`.
+  - returns an array of all the `Review` instances for the `Movie`. # done, works
 - `Movie#reviewers`
-  - returns an array of all of the `Viewer` instances that reviewed the `Movie`.
+  - returns an array of all of the `Viewer` instances that reviewed the `Movie`. # done, works
 
 ### Aggregate and Association Methods
 
