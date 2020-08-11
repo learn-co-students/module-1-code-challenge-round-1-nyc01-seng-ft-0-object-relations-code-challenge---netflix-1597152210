@@ -21,8 +21,7 @@ class Viewer
   end
 
   def reviewed_movie?(movie)
-    query = reviewed_movies.find{|rm| rm.title == movie}; # rm in the {} can also be rm == movie if the movie param is the obj instead of the string name
-
+    query = reviewed_movies.find{|rm| rm == movie}; # rm.title == movie would us search by string title
     if query
       true;
     else
@@ -30,7 +29,7 @@ class Viewer
     end
   end
 
-  def rate_movie(movie, rating)
+  def rate_movie(movie, rating) # I could of used review movie hear but forgot lol...still works
     query = Review.all.find{|r| r.movie == movie and r.viewer == self};
     
     if query
