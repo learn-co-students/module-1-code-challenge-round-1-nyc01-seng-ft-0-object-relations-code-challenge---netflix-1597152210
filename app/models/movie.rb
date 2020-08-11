@@ -20,5 +20,21 @@ class Movie
     @@all
   end
 
-  
+  def total_rating
+    reviews.sum do |instance|
+      instance.rating
+      end
+    end
+
+  def average_rating
+    total_rating / reviews.count
+  end
+
+  def self.highest_rated
+    self.all.max_by do |movie|
+      movie.average_rating
+    end
+  end
+
+
 end

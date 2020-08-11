@@ -22,9 +22,9 @@ miriam =Viewer.new("mnuc60")
 #review
 r1=Review.new(miriam, booksmart, 8)
 r2=Review.new(val, matrix, 7)
-r3=Review.new(anthony, lotr, 10)
+r3=Review.new(anthony, lotr, 7)
 r4=Review.new(val,hp, 10)
-r5=Review.new(anthony,hp, 10)
+r5=Review.new(anthony,hp, 8)
 
 
 
