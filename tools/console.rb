@@ -14,6 +14,7 @@ end
 vincent = Viewer.new('Vincent')
 lou = Viewer.new('Lou')
 tiffany = Viewer.new('Tiffany')
+katelyn = Viewer.new('Katelyn')
 
 #movie
 bad_boys = Movie.new('Bad Boys')
@@ -24,6 +25,7 @@ jaws = Movie.new('Jaws')
 review1 = Review.new(vincent, bad_boys, 4)
 review2 = Review.new(lou, harry_potter, 3)
 review3 = Review.new(tiffany, jaws, 5)
+review4 = Review.new(katelyn, bad_boys, 4)
 
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #

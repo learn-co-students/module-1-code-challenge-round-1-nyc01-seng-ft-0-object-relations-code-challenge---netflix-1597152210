@@ -26,13 +26,14 @@ class Viewer
       Review.new(self, movie, rating)
     else
       Review.all.select do |review|
-        # if reviewed_movie?(movie)
-        #   Review.rating = rating
-        # end
-        binding.pry
+        if reviewed_movie?(review.movie)
+          review.rating = rating
+        end
       end
     end
   end
+
+
 # vincent.rate_movie(bad_boys, 100)
 
   # class methods
