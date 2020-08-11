@@ -23,5 +23,4 @@ class Review
     #     @viewer
     # end
 
-
 end
