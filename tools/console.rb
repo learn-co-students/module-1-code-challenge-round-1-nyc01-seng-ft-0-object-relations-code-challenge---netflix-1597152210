@@ -18,8 +18,8 @@ movie_watcher = Viewer.new("movie_watcher")
 reviewer22 = Viewer.new("reviewer22")
 
 new_review = Review.new(cool_guy, yeah, 2)
-other_review = Review.new(movie_watcher, moovie, 5)
-review2 = Review.new(reviewer22, moovie, 1)
+other_review = Review.new(movie_watcher, moovie, 10)
+review2 = Review.new(reviewer22, moovie, 5)
 review555 = Review.new(cool_guy, sitting, 6)
 
 

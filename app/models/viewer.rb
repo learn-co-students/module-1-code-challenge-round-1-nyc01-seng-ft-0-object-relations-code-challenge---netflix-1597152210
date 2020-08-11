@@ -24,5 +24,18 @@ class Viewer
     end
   end
 
+  def reviewed_movie?(movie)
+    if reviewed_movies.include?(movie)
+       true
+    else
+      false
+    end
+  end
+
+  def rate_movie(movie, rating)
+    
+
+  end
+
   
 end

@@ -24,6 +24,13 @@ class Movie
   end
   end
 
+  def average_rating
+    Review.all.reduce(0) do |sum, ratings|
+      sum + (ratings.rating/Review.all.count)
+    end
+
+  end
+
 
 end
 
