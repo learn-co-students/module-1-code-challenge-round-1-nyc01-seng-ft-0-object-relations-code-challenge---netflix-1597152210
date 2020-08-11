@@ -39,8 +39,8 @@ class Viewer
 #  end
 
   def reviewed_movie?(movie) #prettier version to above :)
-    reviewed_movies.any? do |reviwedmovie|
-      reviwedmovie == movie
+    reviewed_movies.any? do |reviewedmovie|
+      reviewedmovie == movie
     end
   end
 
