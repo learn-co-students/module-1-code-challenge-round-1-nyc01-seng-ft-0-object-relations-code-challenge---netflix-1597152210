@@ -18,14 +18,14 @@ class Viewer
 
   def reviewed_movies
     Review.all.filter do |reviews|
-      if reviews.viewer == self && reviews.movie == Movie.title
-        Movie.title
+      if reviews.viewer == self
+        reviews.movie
       end
     end
   end
 
   def reviewed_movie?(movie)
-    self.reviewed_movies.include?(movie)
+    
   end
 
   def rate_movie(movie, rating)

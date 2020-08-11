@@ -22,9 +22,17 @@ erik = Viewer.new("erik")
 derek = Viewer.new("derek")
 mahir = Viewer.new("mahir")
 
-review1 = Review.new(erik, darkknight, 9)
-review2 = Review.new(derek, inception, 9.5)
-review3 = Review.new(mahir, parasite, 10)
+review1 = Review.new(erik, darkknight, 1)
+review2 = Review.new(erik, inception, 2)
+review3 = Review.new(erik, parasite, 3)
+review4 = Review.new(derek, darkknight, 4)
+review5 = Review.new(derek, inception, 5)
+review6 = Review.new(derek, parasite, 6)
+review7 = Review.new(mahir, darkknight, 7)
+review8 = Review.new(mahir, inception, 8)
+review9 = Review.new(mahir, parasite, 9)
+
+
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
 binding.pry
