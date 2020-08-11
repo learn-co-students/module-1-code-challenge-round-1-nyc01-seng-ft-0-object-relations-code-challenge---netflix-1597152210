@@ -25,7 +25,7 @@ class Viewer
   end
 
   def reviewed_movie?(movie)
-    
+    self.reviewed_movies.include?(movie)
   end
 
   def rate_movie(movie, rating)
