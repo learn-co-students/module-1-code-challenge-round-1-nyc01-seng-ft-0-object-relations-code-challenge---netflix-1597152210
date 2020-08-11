@@ -20,13 +20,24 @@ class Viewer
     end
   end
 
+  # def update_rating(new_rating)
+  #   self.reviews.map do |review|
+  #     review.rating = new_rating
+  #   end
+  # end
+
   def reviewed_movie?(movie)
       reviewed_movies.include?(movie)
   end
 
   def rate_movie(movie, rating)
-    if ####
+    if self.reviewed_movie?(movie)
+        self.reviews.map do |review|
+          review.rating = rating
+        end
+    else
       Review.new(self, movie, rating)
+      end
   end
 
   def self.all
