@@ -24,13 +24,13 @@ class Movie
     end
   end
 
-  def average_rating
+  def average_rating #returns the average of all ratings for the `Movie` instance
     reviews.map do |review|
       review.rating
     end.sum / reviews.length
   end
 
-  def self.highest_rated
+  def self.highest_rated #returns the `Movie` instance with the highest average rating.
     all.max_by do |movie|
       movie.average_rating
     end

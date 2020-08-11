@@ -24,7 +24,7 @@ class Viewer
     end
   end
 
-  def reviewed_movie?(movie) #movie is an instance / if reviewed movie return true if not return false
+  def reviewed_movie?(movie) #movie is an instance / if reviewed movie return true if not return false /need to make prettier if I have time
     moviereview = []
     reviewed_movies.select do |rm|
        if rm == movie
@@ -38,7 +38,7 @@ class Viewer
     end
   end
 
-  def rate_movie(movie, rating)
+  def rate_movie(movie, rating) # if viewer has reviwed movie change review if not create new review / need to make prettier if time
     if reviewed_movie?(movie) == false
       Review.new(self, movie, rating)
     else #assign a new rating
