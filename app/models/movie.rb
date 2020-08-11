@@ -28,7 +28,8 @@ class Movie
 
 
   def self.highest_rated
-    all.max_by {|review| review.rating}
+    all.select{|reviews| reviews.} 
+      
   end
  
 end
