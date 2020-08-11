@@ -5,11 +5,20 @@ class Movie
 
   def initialize(title)
     @title = title
-    self.class.all << self
+    @@all << self
+  end
+
+  def reviews
+    Review.all.select{|review|review.movie==self}
+  end
+
+  def viewers
+    reviews.map {|review|review.viewer}
   end
 
   def self.all
     @@all
   end
 
+  
 end
