@@ -24,6 +24,27 @@ class Viewer
     end
   end
 
-  
+  def find_review_by_movie(movie)
+    reviews.find do |review|
+      review.movie == movie
+    end
+      
+  end
+
+  def reviewed_movie?(movie)
+    if find_review_by_movie(movie)
+      true
+    else
+      false
+    end
+  end
+
+  def rate_movie(movie, rating)
+    if reviewed_movie?(movie)
+      find_review_by_movie(movie).rating = rating
+    else
+      Review.new(self, movie, rating)
+    end
+  end
   
 end
