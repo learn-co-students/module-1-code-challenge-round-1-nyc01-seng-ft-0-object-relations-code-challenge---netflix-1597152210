@@ -12,4 +12,6 @@ class Movie
     @@all
   end
 
+  
+
 end
