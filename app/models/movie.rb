@@ -35,9 +35,8 @@ class Movie
   end 
 
   def self.highest_rated
-    # iterate through to find highest rating
-    # produce new array
-
+    #looking through the entire class to find the highest rated movie
+    all.max_by{|score| score[:rating]}[:title]
   end 
 
 end
