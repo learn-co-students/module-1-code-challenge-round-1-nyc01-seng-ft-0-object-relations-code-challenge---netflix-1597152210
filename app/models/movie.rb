@@ -12,4 +12,14 @@ class Movie
     @@all
   end
 
+  def reviews
+    Review.all.filter {|reviews| reviews.movie == self}
+  end
+
+  def reviewers
+    if Viewer.reviewed_movies == self
+      Viewer.usernames
+    end
+  end
+
 end
