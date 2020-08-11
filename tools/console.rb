@@ -18,12 +18,12 @@ isa = Viewer.new("Isa")
 ellie = Viewer.new("Elyssa")
 minnie = Viewer.new("Minerva")
 
-Review.new(hereditary, isa, 10)
-Review.new(light, isa, 9)
-Review.new(summer, isa, 9)
-Review.new(summer, ellie, 10)
-Review.new(hereditary, ellie, 5)
-Review.new(summer, minnie, 8)
+rev1 = Review.new(hereditary, isa, 10)
+rev2 = Review.new(light, isa, 9)
+rev3 = Review.new(summer, isa, 9)
+rev4 = Review.new(summer, ellie, 10)
+rev5 = Review.new(hereditary, ellie, 5)
+rev6 = Review.new(summer, minnie, 8)
 
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
