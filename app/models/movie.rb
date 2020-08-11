@@ -14,7 +14,9 @@ class Movie
   end
 
   def reviewers
-    self.reviews.map {|review| review.viewer} # wouldn't need uniq because we are making sure every viewer can review the same movie only once
+    self.reviews.map {|review| review.viewer}
+    # wouldn't need uniq because we are making sure every viewer
+    # can review the same movie only once
   end
 
   ### Aggregate and Association Methods

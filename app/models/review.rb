@@ -15,7 +15,8 @@ class Review
     end
 
     ## instance methods section 
-    ## viewer and movie methods asked for in the challenge are already defined in the attr_accesor
+    ## viewer and movie methods asked for in the challenge are already defined 
+    ## in the attr_accesor
 
 
     ## class methods section
