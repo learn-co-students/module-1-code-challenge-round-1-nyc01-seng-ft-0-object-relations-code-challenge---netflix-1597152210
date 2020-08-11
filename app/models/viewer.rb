@@ -27,17 +27,6 @@ class Viewer
   def reviewed_movie?(movie)
     self.reviewed_movies.include?(movie)
   end
-
-  # def rate_movie(movie, rating)
-  #   if !self.reviewed_movie?(movie)
-  #     return Review.new(self, movie, rating)
-  #   end
-  #   movie_to_change = self.reviews.find do |review|
-  #       review.movie == movie
-  #     end
-  #     movie_to_change.rating = rating
-  #     movie_to_change
-  # end
  
   def rate_movie(movie, rating)
     if self.reviewed_movie?(movie)
@@ -50,7 +39,18 @@ class Viewer
       Review.new(self, movie, rating)
     end
   end
-  
+
+  # def rate_movie(movie, rating)
+  #   if !self.reviewed_movie?(movie)
+  #     return Review.new(self, movie, rating)
+  #   end
+  #   movie_to_change = self.reviews.find do |review|
+  #       review.movie == movie
+  #     end
+  #     movie_to_change.rating = rating
+  #     movie_to_change
+  # end
+
 end
 
 
