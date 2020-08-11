@@ -21,7 +21,8 @@ class Movie
   end 
 
   def average_rating
-    (reviews.map {|review| review.rating }.reduce {|sum, rating| sum + rating })/ reviews.count 
+    #(reviews.map {|review| review.rating }.reduce {|sum, rating| sum + rating })/ reviews.count 
+    reviews.reduce(0){|sum, review| sum + review.rating } / reviews.count 
   end
 
   def self.highest_rated
