@@ -1,4 +1,5 @@
 # Object Relations Code Challenge - Flatflix
+#Alicia Javier
 
 For this challenge, we'll be working with a Movie Review domain, like Netflix.
 
