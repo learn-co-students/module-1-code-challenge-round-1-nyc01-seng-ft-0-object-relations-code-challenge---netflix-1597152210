@@ -27,8 +27,8 @@ r1 = Review.new(m1, v1, 5)
 r2 = Review.new(m2, v2, 2)
 r3 = Review.new(m3, v3, 3)
 r4 = Review.new(m4, v4, 1)
-r5 = Review.new(m1, v2, 4)
-r6 = Review.new(m3, v4, 2)
+r5 = Review.new(m1, v2, 25)
+r6 = Review.new(m3, v4, 7)
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
 #binding.pry
