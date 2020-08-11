@@ -1,6 +1,5 @@
 class Movie
   attr_accessor :title
-
   @@all = []
 
   def initialize(title)

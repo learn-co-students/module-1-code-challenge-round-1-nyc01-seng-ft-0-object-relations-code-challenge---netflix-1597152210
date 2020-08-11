@@ -1,6 +1,5 @@
 class Viewer
   attr_accessor :username
-
   @@all = []
 
   def initialize(username)
@@ -11,5 +10,9 @@ class Viewer
   def self.all
     @@all
   end
+
+  # def reviews
+  #   Review.all.select { |review| review.viewer == self }
+  # end
   
 end
