@@ -11,5 +11,17 @@ class Viewer
   def self.all
     @@all
   end
+
+  def reviews 
+    Review.all.select.{|review| review.viewer == self}
+  end
+
+  def reviewed(movie)
+    if self.reviews.map{|reviews| review.movie}? 
+    else false
+     end
+    end
+
+
   
 end
