@@ -24,6 +24,7 @@ review1 = Review.new(viewer1, movie1, 2)
 review2 = Review.new(viewer2, movie2, 4)
 review3 = Review.new(viewer3, movie3, 6)
 review4 = Review.new(viewer4, movie4, 8)
+review5 = Review.new(viewer4, movie3, 5)
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
 binding.pry
