@@ -11,5 +11,10 @@ class Movie
   def self.all
     @@all
   end
-
+  
+  def reviews
+    Review.all.map do |movie|
+      movie = self 
+  end 
+end
 end

@@ -12,4 +12,9 @@ class Viewer
     @@all
   end
   
+  def reviews
+    Review.all.select do |viewer|
+      viewer == Review
+    end 
+  end 
 end
