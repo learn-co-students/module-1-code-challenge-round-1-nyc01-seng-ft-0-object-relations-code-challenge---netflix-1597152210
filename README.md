@@ -1,4 +1,4 @@
-adam smolenski
+adam smolenski, who commited too quickly so here's the commit in room... too much coffee and too eager
 # Object Relations Code Challenge - Flatflix
 
 For this challenge, we'll be working with a Movie Review domain, like Netflix.
