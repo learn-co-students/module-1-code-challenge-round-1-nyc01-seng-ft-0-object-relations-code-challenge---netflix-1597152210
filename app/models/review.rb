@@ -14,5 +14,5 @@ class Review
         @@all
     end
 
-    
+
 end

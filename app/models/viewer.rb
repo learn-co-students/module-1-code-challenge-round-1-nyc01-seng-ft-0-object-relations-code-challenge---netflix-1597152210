@@ -24,8 +24,8 @@ class Viewer
     end
   end
 
-  def reviewed_movie?(movie) #<=== "?" method works as a conditional
-
+  def reviewed_movie?(movie) #<=== "?" method works as a conditional??
+      self.reviewed_movies == movie
   end
 
   def rate_movie(movie, rating)

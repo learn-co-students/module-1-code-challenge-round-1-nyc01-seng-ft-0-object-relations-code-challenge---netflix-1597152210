@@ -25,10 +25,12 @@ class Movie
     end
 
     def average_rating
-      reviews.map do |rev|
-        rev.movie 
-      end.sum
-    end
     
+    end
+
+    def self.highest_rated
+
+    end
+
 end
 
