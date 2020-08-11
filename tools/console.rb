@@ -10,6 +10,12 @@ end
 avatar = Movie.new("Avatar")
 oldoy = Movie.new("Old Boy")
 predator = Movie.new("Predator")
+cars = Movie.new("Cars")
+
+alex = Viewer.new("Alex")
+angela = Viewer.new("Angela")
+tom = Viewer.new("Tom")
+brad = Viewer.new("Brad")
 
 
 
