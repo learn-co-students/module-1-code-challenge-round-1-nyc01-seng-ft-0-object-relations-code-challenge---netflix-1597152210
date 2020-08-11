@@ -24,17 +24,23 @@ class Viewer
     end
   end
 
-  def reviewed_movie?(movie) #movie is an instance / if reviewed movie return true if not return false /need to make prettier if I have time
-    moviereview = []
-    reviewed_movies.select do |rm|
-       if rm == movie
-        moviereview = rm
-       end
-    end
-    if moviereview != []
-      true
-    else 
-      false
+  #def reviewed_movie?(movie) #movie is an instance / if reviewed movie return true if not return false /need to make prettier if I have time
+   # moviereview = []
+    #reviewed_movies.select do |rm|
+     #  if rm == movie
+      #  moviereview = rm
+       #end
+    #end
+    #if moviereview != []
+     # true
+    #else 
+     # false
+    #end
+#  end
+
+  def reviewed_movie?(movie)
+    reviewed_movies.any? do |reviwedmovie|
+      reviwedmovie == movie
     end
   end
 
@@ -50,5 +56,8 @@ class Viewer
     end
   end
 
+  def test(movie, rating)
+    
+  end
   
 end
