@@ -23,5 +23,13 @@ class Viewer
       rev.movie 
     end
   end
+
+  def reviewed_movie?(movie) #<=== "?" method works as a conditional
+
+  end
+
+  def rate_movie(movie, rating)
+    Review.new(self, movie, rating)
+  end
   
 end

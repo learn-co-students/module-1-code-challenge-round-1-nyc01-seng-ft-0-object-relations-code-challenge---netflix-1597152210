@@ -18,5 +18,17 @@ class Movie
       end
     end
 
+    def reviewers
+      reviews.map do |rev|
+        rev.viewer
+      end
+    end
+
+    def average_rating
+      reviews.map do |rev|
+        rev.movie 
+      end.sum
+    end
+    
 end
 
