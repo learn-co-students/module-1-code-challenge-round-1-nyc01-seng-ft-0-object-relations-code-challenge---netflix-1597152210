@@ -19,5 +19,12 @@ class Movie
   def reviewers
     reviews.map {|review| review.viewer}
   end
-  
+
+  def average_rating
+    reviews.reduce(0){|sum , review| sum + (review.rating/reviews.length)}
+  end
+
+  def highest_rated
+    self.reviews.max{|a, b| a.rating <=> b.rating}
+  end
 end

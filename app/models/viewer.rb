@@ -30,7 +30,14 @@ class Viewer
     flag
   end
 
-  def 
+  def rate_movie(movie, rating)
+    if reviews.include? (movie)
+      movie.rating = rating
+    else
+      Review.new(self, movie, rating)
+    end
+  end
+  
 
   
 end
