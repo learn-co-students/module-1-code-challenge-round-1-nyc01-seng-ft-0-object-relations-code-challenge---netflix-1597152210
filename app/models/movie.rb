@@ -25,5 +25,11 @@ class Movie
     end
   end
 
+  # def self.highest_rated
+  #   all.reduce(0) do |av, rev|
+  #     av + (rev.review/all.length)
+  #   end
+  # end
+ 
 
 end
