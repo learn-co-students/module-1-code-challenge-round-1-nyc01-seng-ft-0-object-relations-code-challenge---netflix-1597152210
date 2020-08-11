@@ -8,15 +8,11 @@ class Review
     def initialize(viewer, movie, rating)
         @viewer = viewer
         @movie = movie
-        @rating = rating
+        @rating = rating.to_f
         @@all << self
     end
 
     def self.all
         @@all
     end
-
-
-
-
 end

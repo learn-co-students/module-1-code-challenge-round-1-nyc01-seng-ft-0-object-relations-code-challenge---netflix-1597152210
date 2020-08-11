@@ -22,11 +22,13 @@ class Movie
   end
 
   def average_rating
-    reviews.ratings.sum / reviews.count
+    reviews.sum { |reviews| reviews.rating } / reviews.count
   end
 
 
   def self.highest_rated
-    reviews.max { |review| review.rating }
+    highest_rated_instance = Review.all.max_by { |review| review.rating }
+    highest_rating = highest_rated_instance.rating
+    Review.all.map { |review|  if review.rating == highest_rating; review.movie end }.compact
   end
 end
