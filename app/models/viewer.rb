@@ -33,8 +33,11 @@ class Viewer
   end
 
   def rate_movie(movie, rating)
-    
-
+    if !reviewed_movies.include?(movie)
+      Review.new(self, movie, rating)
+    else
+      rating = rating
+    end
   end
 
   

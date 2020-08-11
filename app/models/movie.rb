@@ -28,7 +28,10 @@ class Movie
     Review.all.reduce(0) do |sum, ratings|
       sum + (ratings.rating/Review.all.count)
     end
+  end
 
+  def self.highest_rated
+    
   end
 
 
