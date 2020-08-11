@@ -17,6 +17,10 @@ jen.rate_movie(matrix, 4)
 bob.rate_movie(star_wars, 5)
 bob.rate_movie(matrix, 3)
 
+jen.rate_movie(dumbo, 4.5)
+
+
+
 
 
 

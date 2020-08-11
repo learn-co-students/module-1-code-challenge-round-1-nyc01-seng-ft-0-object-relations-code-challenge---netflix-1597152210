@@ -1,6 +1,8 @@
 class Review
 
     attr_reader :viewer, :movie
+    
+    #Per specs, :rating should be able to be modified
     attr_accessor :rating
 
     @@all = []
