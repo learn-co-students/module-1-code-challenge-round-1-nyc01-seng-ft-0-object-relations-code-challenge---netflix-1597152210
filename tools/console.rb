@@ -27,6 +27,8 @@ get_out= Movie.new("Get Out")
 rev1 = Review.new(ben, homecoming, 3)
 rev2 = Review.new(ben, parasite, 5)
 rev3 = Review.new(sia, get_out, 5)
+rev4 = Review.new(sia, homecoming, 5)
+rev5 = Review.new(allen, parasite, 4)
 
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
