@@ -1,25 +1,28 @@
 class Movie
-  attr_accessor :title
+  attr_accessor :title # title can be both changed and viewed
 
   @@all = []
 
-  def initialize(title)
+  def initialize(title) # initialized with a title
     @title = title
     self.class.all << self
   end
 
-  def self.all
+  def self.all #returns an array of all Movie instances
     @@all
+  end
+
+  def reviews
+    Review.all.select do |review|
+      review.movie == self
+    end
+  end
+
+  def reviewers
+    self.reviews.map do |review|
+      review.viewer
+    end
   end
 
 end
 
-# #### Movie
-
-# - `Movie#initialize(title)`
-#   - `Movie` is initialized with a title (string)
-#   - title **can be** changed after the `Movie` is initialized
-# - `Movie#title`
-#   - returns the `Movie`'s title
-# - `Movie.all`
-#   - returns an array of all the `Movie` instances that have been initialized
