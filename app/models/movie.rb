@@ -1,4 +1,5 @@
 class Movie
+
   attr_accessor :title
 
   @@all = []
@@ -10,6 +11,14 @@ class Movie
 
   def self.all
     @@all
+  end
+
+  def reviews
+    Review.all.select {|review| review.movie == self}
+  end
+
+  def reviewers
+    self.reviews.map {|review| review.viewer}
   end
 
 end
