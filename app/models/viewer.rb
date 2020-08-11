@@ -26,8 +26,8 @@ class Viewer
 
   def rate_movie(movie, rating)
     if reviewed_movie?(movie)
-      past = Review.all.find {|review| review.movie == movie && review.viewer == self} 
-      past.rating = rating.to_f
+      past_review = Review.all.find {|review| review.movie == movie && review.viewer == self} 
+      past_review.rating = rating.to_f
     else
       Review.new(self, movie, rating)
     end
