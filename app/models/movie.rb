@@ -25,7 +25,11 @@ class Movie
   end
 
   def average_rating
-    
+    sum = 0
+    Review.all.filter do |reviews|
+      sum += reviews.rating
+    end
+    sum/(reviews.count)
   end
 
   def highest_rated
