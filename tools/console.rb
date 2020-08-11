@@ -10,10 +10,14 @@ end
 # This is a convenient place to define variables and/or set up new object instances,
 # so they will be available to test and play around with in your console
 
+matrix = Movie.new('matrix');
+kain = Viewer.new('kain');
+review_kain_matrix = Review.new(kain, matrix, 10)
+kubo = Movie.new('kubo');
 
 
 
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
 binding.pry
-0
+
