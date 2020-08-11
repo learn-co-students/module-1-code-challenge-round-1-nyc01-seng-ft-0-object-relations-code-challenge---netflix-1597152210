@@ -15,17 +15,22 @@ ring = Movie.new("Ring")
 rush_hour = Movie.new("Rush Hour")
 pokemon = Movie.new("Pokemon")
 titanic = Movie.new("Titanic")
+mha = Movie.new("My Hero Academia")
 
 #viewer list
 monica = Viewer.new("Monica")
 chandler = Viewer.new("Chandler")
 fred = Viewer.new("Fred")
 jose = Viewer.new("Jose")
+erin = Viewer.new("Erin")
 
 #reviews
 rev1 = Review.new(monica, titanic, 9)
 rev2 = Review.new(fred, pokemon, 7)
 rev3 = Review.new(chandler, ring, 2)
+rev4 = Review.new(erin, mha, 8)
+rev5 = Review.new(chandler, titanic, 5)
+
 
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
