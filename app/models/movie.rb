@@ -25,7 +25,7 @@ class Movie
   end
 
   def self.highest_rated
-    Movie.all.reduce(0){|highest_rating, m| highest_rating > m.average_rating ? (m.average_rating) : (highest_rating)}
+    Movie.all.reduce(0){|highest_rating, m| highest_rating < m.average_rating ? (m.average_rating) : (highest_rating)}
   end
 
 end
