@@ -5,7 +5,7 @@ class Movie
 
   def initialize(title)
     @title = title
-    self.class.all << self
+    @@all.push(self)
   end
 
   def self.all
