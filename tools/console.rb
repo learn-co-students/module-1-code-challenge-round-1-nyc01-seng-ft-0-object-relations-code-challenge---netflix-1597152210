@@ -15,7 +15,7 @@ light = Movie.new("Lighthouse")
 summer = Movie.new("Midsommar")
 
 isa = Viewer.new("Isa")
-ellie = Viewer.new("Ellie")
+ellie = Viewer.new("Elyssa")
 minnie = Viewer.new("Minerva")
 
 Review.new(hereditary, isa, 10)
