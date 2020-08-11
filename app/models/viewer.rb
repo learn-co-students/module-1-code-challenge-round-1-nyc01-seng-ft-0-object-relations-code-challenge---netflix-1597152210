@@ -26,8 +26,7 @@ class Viewer
 
   def rate_movie(movie, rating)
     if self.reviewed_movie?(movie)
-      self.reviews.map{|e|e.movie == movie and e.rating = rating}
-      self.reviews
+      self.reviews.selec{|e|e.movie == movie and e.rating = rating}
     else
       Review.new(movie, self, rating)
     end
