@@ -1,3 +1,5 @@
+require 'pry'
+
 class Viewer
   attr_accessor :username
 
@@ -11,5 +13,20 @@ class Viewer
   def self.all
     @@all
   end
+
+  def reviews
+    # Reviews that return truthy, either you wrote this review or you didn't
+    # Yes or no selection --> use .select
+    Review.all.select{|review| review.viewer == self}
+  end
+
+  def reviewed_movies
+    #returns array of only movies reviewed by viewer
+    #creating new array --> use .map
+    #drawing on def reviews above to avoid going back through ALL reviews (we only want the ones associated with this viewer)
+    self.movie.map{|movie| movie.review}.uniq
+  end 
   
 end
+
+binding.pry

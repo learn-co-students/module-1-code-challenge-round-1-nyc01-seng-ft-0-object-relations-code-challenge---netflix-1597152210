@@ -1,3 +1,5 @@
+require 'pry'
+
 class Movie
   attr_accessor :title
 
@@ -12,4 +14,15 @@ class Movie
     @@all
   end
 
+  def reviews
+
+  end 
+
+  def reviewers
+    #return array of all review instances for movie
+  end 
+
 end
+
+binding.pry 
+
