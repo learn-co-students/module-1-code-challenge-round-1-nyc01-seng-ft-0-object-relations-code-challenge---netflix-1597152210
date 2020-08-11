@@ -15,5 +15,13 @@ class Review
         @@all
     end
 
+    # def movie    ##Unnecessary, as attr_accessor already provides us with the functionality of these two methods
+    #     @movie
+    # end
+
+    # def viewer
+    #     @viewer
+    # end
+
 
 end
