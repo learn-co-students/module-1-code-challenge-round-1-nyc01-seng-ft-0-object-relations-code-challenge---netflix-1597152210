@@ -32,15 +32,15 @@ class Viewer
     end
   end
 
-  # def rate_movie(movie, rating)
-  #   if !reviewed_movie?(movie)
-  #     Review.new(self, movie, rating)
-  #   else 
-      
-  #   end
-  # end
-      
+  def rate_movie(movie, rating)
+    if !reviewed_movie?(movie)
+      Review.new(self, movie, rating)
+    elsif reviewed_movie?(movie) == true
+        Review.new(self, movie, rating)
+    end
+end
 
+#not quite 
 
 
 end

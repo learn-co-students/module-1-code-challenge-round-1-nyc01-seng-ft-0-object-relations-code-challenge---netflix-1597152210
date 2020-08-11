@@ -35,17 +35,14 @@ class Movie
   end
 ##oops extra methods i guess 
 
-  def ratings_array 
-    self.reviews.map do |reviews|
-      reviews.rating 
-    end
-  end
-
-  def average_rating
+  def movie_average
     ratings_array.sum/ ratings_array.length
   end
   
+  def reviews_array
+    reviews.map do |reviews|
+      reviews.rating
+    end
+  end
 
-
-
-end
+end 
