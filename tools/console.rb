@@ -17,11 +17,12 @@ angela = Viewer.new("Angela")
 tom = Viewer.new("Tom")
 brad = Viewer.new("Brad")
 
-r1 = Review.new(alex, avatar, 4)
-r2 = Review.new(angela, predator, 3)
-r3 = Review.new(alex, oldboy, 5)
-r4 = Review.new(tom, cars, 2)
-r5 = Review.new(brad, avatar, 3)
+r1 = Review.new(alex, avatar, 4.0)
+r2 = Review.new(angela, predator, 3.0)
+r3 = Review.new(alex, oldboy, 5.0)
+r4 = Review.new(tom, cars, 2.0)
+r5 = Review.new(brad, avatar, 3.0)
+r6 = Review.new(angela, cars, 3.0)
 
 
 

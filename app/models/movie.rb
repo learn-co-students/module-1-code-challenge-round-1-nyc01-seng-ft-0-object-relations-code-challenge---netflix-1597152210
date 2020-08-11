@@ -23,6 +23,29 @@ class Movie
       reviews.viewer
     end
   end
+    
+  def self.rating_array
+    Review.all.map do |review|
+      review.rating
+    end
+  end
   
+  def Movie.average_rating
+    self.rating_array.sum/ self.rating_array.length
+  end
+##oops extra methods i guess 
+
+  def ratings_array 
+    self.reviews.map do |reviews|
+      reviews.rating 
+    end
+  end
+
+  def average_rating
+    ratings_array.sum/ ratings_array.length
+  end
   
+
+
+
 end
