@@ -19,6 +19,6 @@ class Review
 
 end
 
-binding.pry
+#binding.pry
 
 

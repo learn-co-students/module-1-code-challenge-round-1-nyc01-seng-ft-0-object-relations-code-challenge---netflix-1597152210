@@ -26,6 +26,19 @@ class Viewer
     #drawing on def reviews above to avoid going back through ALL reviews (we only want the ones associated with this viewer)
     self.movie.map{|movie| movie.review}.uniq
   end 
+
+  def reviewed_movie?(movie)
+    #return true if viewer has reviewed this movie 
+    # in other words, is there a review instance with this viewer and movie
+    #return false otherwise 
+    
+
+
+  end 
+
+  def rate_movie(movie, rating)
+
+  end
   
 end
 
