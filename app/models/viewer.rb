@@ -20,6 +20,19 @@ class Viewer
     Review.all.filter do |reviews|
       if reviews.viewer == self && reviews.movie == Movie.title
         Movie.title
+      end
+    end
+  end
+
+  def reviewed_movie?(movie)
+    self.reviewed_movies.include?(movie)
+  end
+
+  def rate_movie(movie, rating)
+    if self.reviewed_movie?(movie)
+      rating = Review.rating
+    else
+      Review.new(self, movie, rating)
     end
   end
   

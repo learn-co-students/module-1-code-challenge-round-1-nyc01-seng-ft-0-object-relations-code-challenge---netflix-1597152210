@@ -6,6 +6,7 @@ class Review
         @viewer = viewer
         @movie = movie
         @rating=  rating
+        self.class.all << self
     end
 
     def self.all
@@ -17,7 +18,7 @@ class Review
     end
 
     def movie
-        Movie.all.select {{|movies| movies.title == self.movie}}
+        Movie.all.select {|movies| movies.title == self.movie}
     end
 
 end

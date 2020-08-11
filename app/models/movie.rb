@@ -22,4 +22,22 @@ class Movie
     end
   end
 
+  def average_rating
+    sum = 0
+    Review.all.filter do |reviews|
+      if reviews.movie == self
+        sum += reviews.rating
+      end
+    end
+    count = 0
+    Review.all.filter do |reviews| 
+      count = reviews.movie.count
+    end
+    sum / count
+  end
+
+  def highest_rated
+    Review.all.select {|reviews| reviews.rating}.max
+  end
+
 end
