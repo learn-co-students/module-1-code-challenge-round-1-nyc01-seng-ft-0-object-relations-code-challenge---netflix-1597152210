@@ -18,15 +18,15 @@ class Movie
 
 
   def reviews
-    Review.all.select {|review| review.movie == self}
+    Review.all.select { |review| review.movie == self}
   end
 
   def reviewers
-    reviews.map {|review| review.viewer }
+    reviews.map { |review| review.viewer }
   end
 
   def average_rating
-    (reviews.sum{|review| review.rating * 1.0})/reviews.length
+    (reviews.sum { |review| review.rating * 1.0})/reviews.length
   end
 
 
