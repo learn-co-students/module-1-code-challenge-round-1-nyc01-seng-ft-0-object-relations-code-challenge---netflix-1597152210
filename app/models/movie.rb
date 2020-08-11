@@ -20,4 +20,12 @@ class Movie
     reviews.map{|r| r.viewer};
   end
 
+  def average_rating
+    reviews.reduce(0){|sum, r| sum + r.rating} / reviews.length # so its working as ints and not floats btw Idk so it will round unless I coerce ratings to a float in the init for review
+  end
+
+  def self.highest_rated
+    Movie.all.reduce(0){|highest_rating, m| highest_rating > m.average_rating ? (m.average_rating) : (highest_rating)}
+  end
+
 end

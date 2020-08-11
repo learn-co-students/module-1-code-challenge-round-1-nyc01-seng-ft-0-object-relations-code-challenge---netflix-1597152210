@@ -14,6 +14,8 @@ matrix = Movie.new('matrix');
 kain = Viewer.new('kain');
 review_kain_matrix = Review.new(kain, matrix, 10)
 kubo = Movie.new('kubo');
+kain2 = Viewer.new('kain2')
+review2_kain_matrix = Review.new(kain2, matrix, 5)
 
 
 
