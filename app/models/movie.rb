@@ -26,7 +26,7 @@ class Movie
   end
 
   def self.highest_rated
-    self.all.max_by{|e|e.average_rating}
+    all.max_by{|e|e.average_rating}
   end
 
 end
