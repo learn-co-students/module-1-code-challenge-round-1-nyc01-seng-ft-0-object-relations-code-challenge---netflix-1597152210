@@ -12,4 +12,17 @@ class Viewer
     @@all
   end
   
+  def reviews
+    Review.all.select do |reviews|
+      reviews.viewer == self
+    end
+  end
+
+  def reviewed_movies
+    reviews.map do |reviews|
+      reviews.movie 
+    end
+  end
+  
+
 end

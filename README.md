@@ -86,10 +86,10 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Viewer
 
-- `Viewer#reviews`
+<!-- - `Viewer#reviews`
   - returns an array of `Review` instances associated with the `Viewer` instance.
 - `Viewer#reviewed_movies`
-  - returns an array of `Movie` instances reviewed by the `Viewer` instance.
+  - returns an array of `Movie` instances reviewed by the `Viewer` instance. -->
 
 #### Movie
 <!-- 
