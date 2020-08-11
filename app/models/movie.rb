@@ -12,4 +12,18 @@ class Movie
     @@all
   end
 
+  def reviews
+    Review.all.filter do |rev|
+      rev.movie == self
+    end
+  end
+
+  def reviewers
+    reviews.map do |reviewers|
+      reviewers.viewer
+  end
+  end
+
+
 end
+
