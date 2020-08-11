@@ -92,11 +92,11 @@ Some of the methods listed are provided to you in the starter code. You should c
   - returns an array of `Movie` instances reviewed by the `Viewer` instance.
 
 #### Movie
-
+<!-- 
 - `Movie#reviews`
   - returns an array of all the `Review` instances for the `Movie`.
 - `Movie#reviewers`
-  - returns an array of all of the `Viewer` instances that reviewed the `Movie`.
+  - returns an array of all of the `Viewer` instances that reviewed the `Movie`. -->
 
 ### Aggregate and Association Methods
 
