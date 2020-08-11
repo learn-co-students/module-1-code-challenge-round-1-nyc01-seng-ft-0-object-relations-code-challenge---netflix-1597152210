@@ -12,7 +12,7 @@ class Movie
     Review.all.select{|review|review.movie==self}
   end
 
-  def viewers
+  def reviewers
     reviews.map {|review|review.viewer}
   end
 

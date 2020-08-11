@@ -1,10 +1,11 @@
 class Review
 
-    attr_accessor :movie, :viewer
+    attr_accessor :movie, :viewer, :rating
 
     @@all=[]
-    
-    def initialize (movie, viewer)
+
+    def initialize (viewer, movie, rating)
+        @rating=rating
         @movie=movie
         @viewer=viewer
         @@all << self
