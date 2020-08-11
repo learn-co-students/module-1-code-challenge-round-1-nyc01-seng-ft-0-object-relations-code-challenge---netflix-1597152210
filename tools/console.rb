@@ -11,10 +11,11 @@ jen = Viewer.new("Jen789")
 
 matrix = Movie.new("Matrix")
 star_wars = Movie.new("Star Wars")
+dumbo = Movie.new("Dumbo")
 
-jen.make_review(matrix, "awesome!")
-bob.make_review(star_wars, "great!")
-bob.make_review(matrix, "It's green!")
+jen.rate_movie(matrix, 4)
+bob.rate_movie(star_wars, 5)
+bob.rate_movie(matrix, 3)
 
 
 
