@@ -14,7 +14,7 @@ class Viewer
   
   def reviews #returns an array of `Review` instances associated with the `Viewer` instance.
     Review.all.select do |review|
-      review.user == self
+      review.viewer == self
     end
   end
 
@@ -24,7 +24,7 @@ class Viewer
     end
   end
 
-  def reviewed_movie?(movie) #movie is an instance
+  def reviewed_movie?(movie) #movie is an instance / if reviewed movie return true if not return false
     moviereview = []
     reviewed_movies.select do |rm|
        if rm == movie

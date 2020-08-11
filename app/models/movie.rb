@@ -20,7 +20,7 @@ class Movie
 
   def reviewers #returns an array of all of the `Viewer` instances that reviewed the `Movie`
     reviews.map do |review|
-      review.user
+      review.viewer
     end
   end
 
