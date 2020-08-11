@@ -29,16 +29,15 @@ class Viewer
 
   def reviewed_movie?(movie)
     #return true if viewer has reviewed this movie 
-    # in other words, is there a review instance with this viewer and movie
+    #in other words, is there a review instance with this viewer and movie
     #return false otherwise 
-    
-
-
+    if movie.review.present?
+      true
   end 
 
-  def rate_movie(movie, rating)
+  #def rate_movie(movie, rating)
 
-  end
+  #end
   
 end
 

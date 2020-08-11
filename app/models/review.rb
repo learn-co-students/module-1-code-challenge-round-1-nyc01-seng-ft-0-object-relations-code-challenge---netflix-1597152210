@@ -16,7 +16,6 @@ class Review
       @@all
     end
 
-
 end
 
 #binding.pry

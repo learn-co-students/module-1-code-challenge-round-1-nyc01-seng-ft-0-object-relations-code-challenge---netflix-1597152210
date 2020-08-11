@@ -27,6 +27,19 @@ class Movie
     review.map{|review| review.viewer.name}.uniq
   end 
 
+  def average_rating
+    #average = total or sum of ratings / # of elements (.length)
+    #a rating starts at 0
+    #.reduce to output a single value from an array
+    movie.reduce(0){|sum, movie| sum + (movie.rating/all.length)}
+  end 
+
+  def self.highest_rated
+    # iterate through to find highest rating
+    # produce new array
+
+  end 
+
 end
 
 binding.pry 
