@@ -38,13 +38,13 @@ class Viewer
     #end
 #  end
 
-  def reviewed_movie?(movie)
+  def reviewed_movie?(movie) #prettier version to above :)
     reviewed_movies.any? do |reviwedmovie|
       reviwedmovie == movie
     end
   end
 
-  def rate_movie(movie, rating) # if viewer has reviwed movie change review if not create new review / need to make prettier if time
+  def rate_movie(movie, rating) # if viewer has reviewed movie change review if not create new review / need to make prettier if time
     if reviewed_movie?(movie) == false
       Review.new(self, movie, rating)
     else #assign a new rating
@@ -57,7 +57,7 @@ class Viewer
   end
 
   def test(movie, rating)
-    
+
   end
   
 end
