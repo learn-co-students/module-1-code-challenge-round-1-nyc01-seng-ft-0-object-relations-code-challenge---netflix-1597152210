@@ -23,12 +23,12 @@ v3 = Viewer.new("val_of_the_dolls")
 v4 = Viewer.new ("blade")
 
 ###### REVIEWS ######
-r1 = Review.new(m1, v1, 5)
-r2 = Review.new(m2, v2, 2)
-r3 = Review.new(m3, v3, 3)
-r4 = Review.new(m4, v4, 1)
-r5 = Review.new(m1, v2, 25)
-r6 = Review.new(m3, v4, 7)
+r1 = Review.new(v1, m1, 5)
+r2 = Review.new(v2, m2, 2)
+r3 = Review.new(v3, m3, 3)
+r4 = Review.new(v4, m4, 1)
+r5 = Review.new(v1, m2, 2)
+r6 = Review.new(v3, m4, 27)
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
 #binding.pry
